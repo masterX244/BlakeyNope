@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         DailyWTF Comment Cleaner
-// @namespace    https://github.com/styrofoamboy
+// @namespace    https://github.com/masterX244
 // @version      0.1
 // @description  Sterilize TDWTF Comments
 // @author       Mike Unfried
