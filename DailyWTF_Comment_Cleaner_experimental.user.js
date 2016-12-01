@@ -16,6 +16,7 @@ jQuery.expr[':'].Contains = jQuery.expr.createPseudo(function(arg) {
 });
 (function() {
     'use strict';
+    var illegalText = ['this website sucks', 'delete this fucking website'];
     var names = ['B L A K E Y R A T','b?keyrat','blameyrat','Fuck you alex','bläkeyrat','blockyrat','Ulysses','B lALye key RraBlaRAT',
                  'Bla-key-rat','blaKEY RaT','CHARLIEMOUSE','blakeyrat','BonkeyRatt','BarfyRoot',
                 'bakedrat'];
@@ -24,12 +25,6 @@ jQuery.expr[':'].Contains = jQuery.expr.createPseudo(function(arg) {
     for (i = 0; i < names.length; i++) {
         if (i > 0) nameList += ", ";
         nameList += "span.poster:Contains('" + names[i] + "')";
-    }
-    var illegalText = ['this website sucks', 'delete this fucking website'];
-    var textList = '';
-    for(i = 0; i < illegalText.lenth; i++) {
-        if (i > 0) textList += ", ";
-        textList += "div:Contains('" + illegalText[i] + "')";
     }
     $(".comments > .comment").css({maxHeight: '20em', overflow: 'auto' });
     $(".comments > .comment img").css("display", "none");
