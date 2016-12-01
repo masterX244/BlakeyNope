@@ -26,8 +26,8 @@ jQuery.expr[':'].Contains = jQuery.expr.createPseudo(function(arg) {
         if (i > 0) nameList += ", ";
         nameList += "span.poster:Contains('" + names[i] + "')";
     }
-    $(".comments > .comment").css({maxHeight: '20em', overflow: 'auto' });
-    $(".comments > .comment img").css("display", "none");
+    $(".comments > .comment").css({maxHeight: '24em', overflow: 'auto' });
+    $(".comments > .comment img").css({width: '2px', height: '2px', border: '1px solid blue'});
     $("li.comment").filter(function(index) {
         var hasIllegalText = false;
         for(var i = 0; i < illegalText.length; i++) {
