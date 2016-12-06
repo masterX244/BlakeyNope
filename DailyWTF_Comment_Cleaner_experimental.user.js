@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DailyWTF Comment Cleaner
 // @namespace    https://github.com/masterX244
-// @version      0.5
+// @version      0.5.1
 // @description  Sterilize TDWTF Comments. Experimental Edition with untested changes. May not work
 // @author       Mike Unfried
 // @match        http://thedailywtf.com/articles/comments/*
@@ -139,7 +139,12 @@ jQuery.expr[':'].Contains = jQuery.expr.createPseudo(function(arg) {
     var illegalText = ['this website sucks', 'delete this fucking website','FUCKING WEBSITE'];
     var names = ['B L A K E Y R A T','b?keyrat','blameyrat','Fuck you alex','bläkeyrat','blockyrat','B lALye key RraBlaRAT',
                  'Bla-key-rat','blaKEY RaT','CHARLIEMOUSE','blakeyrat','BonkeyRatt','BarfyRoot',
-                'bakedrat','b!L ??? Ake ySD RATTT'];
+                'bakedrat','b!L ??? Ake ySD RATTT'
+                
+                
+                //Impersonators of registered accounts
+                ,'Remy Porter'
+                ];
     var nameList = '';
     var i;
     for (i = 0; i < names.length; i++) {
