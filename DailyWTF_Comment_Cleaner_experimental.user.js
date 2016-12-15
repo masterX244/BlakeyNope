@@ -136,10 +136,10 @@ jQuery.expr[':'].Contains = jQuery.expr.createPseudo(function(arg) {
 });
 (function() {
     'use strict';
-    var illegalText = ['this website sucks', 'delete this fucking website','FUCKING WEBSITE','stupid website'];
+    var illegalText = ['this website sucks', 'delete this fucking website','FUCKING WEBSITE','stupid website','suxxx'];
     var names = ['B L A K E Y R A T','b?keyrat','blameyrat','Fuck you alex','bläkeyrat','blockyrat','B lALye key RraBlaRAT',
                  'Bla-key-rat','blaKEY RaT','CHARLIEMOUSE','blakeyrat','BonkeyRatt','BarfyRoot',
-                'bakedrat','b!L ??? Ake ySD RATTT','b l LOL ake ( huh ) ey RaT'
+                'bakedrat','b!L ??? Ake ySD RATTT','b l LOL ake ( huh ) ey RaT','Blekyrat'
                 
                 
                 //Impersonators of registered accounts
