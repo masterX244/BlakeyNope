@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DailyWTF Comment Cleaner
 // @namespace    https://github.com/masterX244
-// @version      0.5.2
+// @version      0.5.3
 // @description  Sterilize TDWTF Comments. Experimental Edition with untested changes. May not work
 // @author       Mike Unfried
 // @match        http://thedailywtf.com/articles/comments/*
