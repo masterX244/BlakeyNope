@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DailyWTF Comment Cleaner
 // @namespace    https://github.com/masterX244
-// @version      0.5.8
+// @version      0.5.9
 // @description  Sterilize TDWTF Comments. Experimental Edition with untested changes. May not work
 // @author       Mike Unfried
 // @match        http://thedailywtf.com/articles/comments/*
@@ -136,10 +136,12 @@ jQuery.expr[':'].Contains = jQuery.expr.createPseudo(function(arg) {
 });
 (function() {
     'use strict';
-    var illegalText = ['this website sucks','delete this fucking website','FUCKING WEBSITE','stupid website','suxxx','remove this page from the internet.'];
+    var illegalText = ['this website sucks','delete this fucking website','FUCKING WEBSITE','stupid website','suxxx','remove this page from the internet.',
+                      'GET CANCER AND DIE','WEBSSITE IS GARBAGE'
+                      ];
     var names = ['B L A K E Y R A T','b?keyrat','blameyrat','Fuck you alex','bläkeyrat','blockyrat','B lALye key RraBlaRAT',
                  'Bla-key-rat','blaKEY RaT','CHARLIEMOUSE','blakeyrat','BonkeyRatt','BarfyRoot',
-                'bakedrat','b!L ??? Ake ySD RATTT','b l LOL ake ( huh ) ey RaT','Blekyrat','drop-table BLKYRAT;','Bankeyrat',
+                'bakedrat','b!L ??? Ake ySD RATTT','b l LOL ake ( huh ) ey RaT','Blekyrat','drop-table BLKYRAT;','Bankeyrat', 'MODS MAD AS FUG',
                 //Impersonators of registered accounts
                 'Remy Porter'
                 ];
