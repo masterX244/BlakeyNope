@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DailyWTF Comment Cleaner
 // @namespace    https://github.com/masterX244
-// @version      0.5.6
+// @version      0.6.0
 // @description  Sterilize TDWTF Comments. Experimental Edition with untested changes. May not work
 // @author       Mike Unfried
 // @match        http://thedailywtf.com/articles/comments/*
@@ -145,11 +145,21 @@ jQuery.expr[':'].Contains = jQuery.expr.createPseudo(function(arg) {
                 //Impersonators of registered accounts
                 ,'Remy Porter'
                 ];
+            //special list that checks registered spamminators, too
+    var registeredSpammers = ['raja tempat sampah'
+                ];
     var nameList = '';
     var i;
     for (i = 0; i < names.length; i++) {
         if (i > 0) nameList += ", ";
         nameList += "span.poster:Contains('" + names[i] + "')";
+    }
+    
+    var registeredList = '';
+    var i;
+    for (i = 0; i < registeredSpammers.length; i++) {
+        if (i > 0) registeredList += ", ";
+        registeredList += "span.poster:Contains('" + registeredSpammers[i] + "')";
     }
         // Set max-height for comments (prevents anyone from "taking over" the page with a paste-bomb.
     $(".comments > .comment").css({maxHeight: '24em', overflow: 'auto' });
@@ -192,7 +202,7 @@ jQuery.expr[':'].Contains = jQuery.expr.createPseudo(function(arg) {
         }
         return (
             ($(this).children(nameList).length > 0 || hasIllegalText) &&
-            $(this).children("span.poster-anon:contains('(unregistered)')").length > 0);
+            ($(this).children("span.poster-anon:contains('(unregistered)')").length > 0)||$(this).children(registeredList).length > 0);
     });
     badComments.each(function(idx, key) {
         var p = $(this);
