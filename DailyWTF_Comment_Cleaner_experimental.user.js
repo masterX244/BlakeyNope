@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DailyWTF Comment Cleaner
 // @namespace    https://github.com/masterX244
-// @version      0.6.3
+// @version      0.6.4
 // @description  Sterilize TDWTF Comments. Experimental Edition with untested changes. May not work
 // @author       Mike Unfried
 // @match        http://thedailywtf.com/articles/comments/*
@@ -137,7 +137,7 @@ jQuery.expr[':'].Contains = jQuery.expr.createPseudo(function(arg) {
 (function() {
     'use strict';
     var illegalText = ['this website sucks','delete this fucking website','FUCKING WEBSITE','stupid website','suxxx','remove this page from the internet.',
-                      'GET CANCER AND DIE','WEBSSITE IS GARBAGE'
+                      'GET CANCER AND DIE','WEBSSITE IS GARBAGE', 'essay writing'
                       ];
     var names = ['B L A K E Y R A T','b?keyrat','blameyrat','Fuck you alex','bläkeyrat','blockyrat','B lALye key RraBlaRAT',
                  'Bla-key-rat','blaKEY RaT','CHARLIEMOUSE','blakeyrat','BonkeyRatt','BarfyRoot',
