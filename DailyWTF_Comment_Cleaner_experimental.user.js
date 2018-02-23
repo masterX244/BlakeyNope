@@ -148,7 +148,7 @@ jQuery.expr[':'].Contains = jQuery.expr.createPseudo(function(arg) {
                 'sasya','obat herbal herbal'
                 ];
             //special list that checks registered spamminators, too
-    var registeredSpammers = ['raja tempat sampah','sachin','Mr. Kunal','Khulafa Biotech'
+    var registeredSpammers = ['raja tempat sampah','sachin','Mr. Kunal','Khulafa Biotech','spaceman'
                 ];
     var nameList = '';
     var i;
