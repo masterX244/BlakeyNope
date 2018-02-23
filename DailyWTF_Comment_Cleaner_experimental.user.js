@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         DailyWTF Comment Cleaner
 // @namespace    https://github.com/masterX244
-// @version      0.6.5
+// @version      0.6.6
 // @description  Sterilize TDWTF Comments. Experimental Edition with untested changes. May not work
 // @author       Mike Unfried
 // @match        http://thedailywtf.com/articles/comments/*
@@ -145,10 +145,10 @@ jQuery.expr[':'].Contains = jQuery.expr.createPseudo(function(arg) {
                 //Impersonators of registered accounts
                 'Remy Porter',
                 //spammers
-                'sasya','obat herbal herbal'
+                'sasya','obat herbal herbal','spaceman'
                 ];
             //special list that checks registered spamminators, too
-    var registeredSpammers = ['raja tempat sampah','sachin','Mr. Kunal','Khulafa Biotech','spaceman'
+    var registeredSpammers = ['raja tempat sampah','sachin','Mr. Kunal','Khulafa Biotech'
                 ];
     var nameList = '';
     var i;
